@@ -120,6 +120,12 @@ Route::get("/blogposts/{post}","BlogPostController@display");
 Route::get("/blogposts","BlogPostController@showall");
 
 
+#day 03
+
+Route::get("/assment","AssigmentController@list");
+Route::post("/assment","AssigmentController@store");
+
+
 
 
 
