@@ -125,6 +125,22 @@ Route::get("/blogposts","BlogPostController@showall");
 Route::get("/assment","AssigmentController@list");
 Route::post("/assment","AssigmentController@store");
 
+Route::get("/students","StudentsController@listStudents");
+Route::post("/students","StudentsController@addStudent");
+
+Route::get("/employees", "EmployeeController@listEmployees");
+Route::post("/employees", "EmployeeController@submitEmployee");
+
+
+Route::get("/editemp/{emp}", "EmployeeController@edit");
+Route::post("/updateemp/{emp}", "EmployeeController@update");
+Route::get("/deleteemp/{emp}", "EmployeeController@delete");
+
+
+
+
+// Route::post("/students","StudentsController@add");
+
 
 
 
